@@ -31,7 +31,7 @@
     <body>
         <h1 align="center">Global Net Report</h1>
         <p>Microchip Technology Inc. - Microchip Libero Software Release v2024.2 (Version 2024.2.0.13)</p>
-        <p>Date: Wed Nov 13 10:57:49 2024
+        <p>Date: Tue Nov 26 11:42:45 2024
 </p>
         <h2>Global Nets Information</h2>
         <table cellpadding="4">
@@ -46,14 +46,14 @@
                 <td>1</td>
                 <td>GB[1] </td>
                 <td>(219, 30)</td>
-                <td>clk_ibuf_RNIVTI21/U0_YNn_GSouth</td>
+                <td>rst_ibuf_RNIUUM54/U0_YNn_GSouth</td>
                 <td>16</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>GB[3] </td>
                 <td>(221, 30)</td>
-                <td>rst_ibuf_RNIUUM54/U0_YNn_GSouth</td>
+                <td>clk_ibuf_RNIVTI21/U0_YNn_GSouth</td>
                 <td>16</td>
             </tr>
         </table>
@@ -74,25 +74,25 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>clk</td>
-                <td>24</td>
-                <td>MSIOD70PB5/CCC_NE1_CLKI1</td>
-                <td>clk_ibuf/U0/U_IOIN:Y</td>
-                <td>(15, 1)</td>
-                <td>GB[1] </td>
-                <td>clk_ibuf_Z</td>
-                <td>ROUTED</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
                 <td>rst</td>
                 <td>53</td>
                 <td>MSIO93NB4</td>
                 <td>rst_ibuf/U0/U_IOIN:Y</td>
                 <td>(162, 1)</td>
-                <td>GB[3] </td>
+                <td>GB[1] </td>
                 <td>rst_ibuf_Z</td>
+                <td>ROUTED</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>clk</td>
+                <td>24</td>
+                <td>MSIOD70PB5/CCC_NE1_CLKI1</td>
+                <td>clk_ibuf/U0/U_IOIN:Y</td>
+                <td>(15, 1)</td>
+                <td>GB[3] </td>
+                <td>clk_ibuf_Z</td>
                 <td>ROUTED</td>
                 <td>1</td>
             </tr>
@@ -122,7 +122,7 @@
                 <td>1</td>
                 <td>GB[1] </td>
                 <td>(219, 30)</td>
-                <td>clk_ibuf_RNIVTI21/U0_YNn_GSouth</td>
+                <td>rst_ibuf_RNIUUM54/U0_YNn_GSouth</td>
                 <td>16</td>
                 <td/>
                 <td>(218, 3)</td>
@@ -132,7 +132,7 @@
                 <td>2</td>
                 <td>GB[3] </td>
                 <td>(221, 30)</td>
-                <td>rst_ibuf_RNIUUM54/U0_YNn_GSouth</td>
+                <td>clk_ibuf_RNIVTI21/U0_YNn_GSouth</td>
                 <td>16</td>
                 <td/>
                 <td>(219, 3)</td>
@@ -140,5 +140,40 @@
             </tr>
         </table>
         <p/>
+        <h2>Warning: Local Clock Nets</h2>
+        <p>The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to Single Event Effects (SEEs) and have less predictable amounts of clock jitter versus the dedicated global resources. Microchip recommends using clock input and clock generation paths that maximize the usage of dedicated global routing resources, as well as promoting these signals to dedicated global resources. Refer to the RTG4 Clocking Resources User Guide and RTG4 Radiation-Mitigated Clock and Reset Network Usage Application Note for more information.
+</p>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> Driving Net </th>
+                <th> To </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>btn[2]</td>
+                <td>btn_c[2]</td>
+                <td>u1/dp_out[1]:CLK</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>btn[1]</td>
+                <td>btn_c[1]</td>
+                <td>u1/dp_out[0]:CLK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>btn[3]</td>
+                <td>btn_c[3]</td>
+                <td>u1/dp_out[2]:CLK</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>btn[4]</td>
+                <td>btn_c[4]</td>
+                <td>u1/dp_out[3]:CLK</td>
+            </tr>
+        </table>
     </body>
 </html>

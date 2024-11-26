@@ -1,4 +1,4 @@
-# Wed Nov 13 10:57:14 2024
+# Tue Nov 26 11:42:31 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -22,16 +22,16 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 199MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 200MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 199MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 200MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 199MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 200MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 199MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 200MB)
 
 
 Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
@@ -39,13 +39,13 @@ Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic.
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
 
-@N: BZ173 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":82:6:82:9|ROM seg_out[7:1] (in view: work.hex4x7seg(struktur)) mapped in logic.
-@N: BZ173 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":82:6:82:9|ROM seg_out[7:1] (in view: work.hex4x7seg(struktur)) mapped in logic.
-@N: MO106 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":82:6:82:9|Found ROM seg_out[7:1] (in view: work.hex4x7seg(struktur)) with 16 words by 7 bits.
+@N: BZ173 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":83:6:83:9|ROM seg_out[7:1] (in view: work.hex4x7seg(struktur)) mapped in logic.
+@N: BZ173 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":83:6:83:9|ROM seg_out[7:1] (in view: work.hex4x7seg(struktur)) mapped in logic.
+@N: MO106 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":83:6:83:9|Found ROM seg_out[7:1] (in view: work.hex4x7seg(struktur)) with 16 words by 7 bits.
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 251MB peak: 251MB)
 
-@N: MO231 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":28:6:28:7|Found counter in view:work.hex4x7seg(struktur) instance counter[13:0] 
+@N: MO231 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":29:6:29:7|Found counter in view:work.hex4x7seg(struktur) instance counter[13:0] 
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 251MB peak: 251MB)
 
@@ -77,55 +77,63 @@ Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    16.58ns		  38 /        16
-@N: FP130 |Promoting Net clk_c on CLKINT  I_94 
-@N: FP130 |Promoting Net rst_c on CLKINT  I_95 
+   1		0h:00m:00s		    16.58ns		  48 /        20
+@N: FP130 |Promoting Net clk_c on CLKINT  I_64 
+@N: FP130 |Promoting Net rst_c on CLKINT  I_65 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 254MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 253MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 206MB peak: 254MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 206MB peak: 254MB)
 
 Writing Analyst data base C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\synthesis\synwork\aufgabe1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
 
 Writing VHDL Simulation files
 
-Finished Writing VHDL Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 255MB)
+Finished Writing VHDL Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 255MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 255MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 255MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 254MB peak: 255MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 255MB)
 
+@W: MT420 |Found inferred clock aufgabe1|btn[1] with period 20.00ns. Please declare a user-defined clock on port btn[1].
+@W: MT420 |Found inferred clock aufgabe1|btn[2] with period 20.00ns. Please declare a user-defined clock on port btn[2].
+@W: MT420 |Found inferred clock aufgabe1|btn[3] with period 20.00ns. Please declare a user-defined clock on port btn[3].
+@W: MT420 |Found inferred clock aufgabe1|btn[4] with period 20.00ns. Please declare a user-defined clock on port btn[4].
 @W: MT420 |Found inferred clock aufgabe1|clk with period 20.00ns. Please declare a user-defined clock on port clk.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Wed Nov 13 10:57:16 2024
+# Timing report written on Tue Nov 26 11:42:34 2024
 #
 
 
@@ -147,11 +155,15 @@ Performance Summary
 
 Worst slack in design: 17.190
 
-                   Requested     Estimated     Requested     Estimated                Clock        Clock     
-Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group     
--------------------------------------------------------------------------------------------------------------
-aufgabe1|clk       50.0 MHz      355.8 MHz     20.000        2.810         17.190     inferred     (multiple)
-=============================================================================================================
+                    Requested     Estimated     Requested     Estimated                Clock        Clock     
+Starting Clock      Frequency     Frequency     Period        Period        Slack      Type         Group     
+--------------------------------------------------------------------------------------------------------------
+aufgabe1|btn[1]     50.0 MHz      827.1 MHz     20.000        1.209         18.791     inferred     (multiple)
+aufgabe1|btn[2]     50.0 MHz      827.1 MHz     20.000        1.209         18.791     inferred     (multiple)
+aufgabe1|btn[3]     50.0 MHz      827.1 MHz     20.000        1.209         18.791     inferred     (multiple)
+aufgabe1|btn[4]     50.0 MHz      827.1 MHz     20.000        1.209         18.791     inferred     (multiple)
+aufgabe1|clk        50.0 MHz      355.8 MHz     20.000        2.810         17.190     inferred     (multiple)
+==============================================================================================================
 
 
 
@@ -160,12 +172,16 @@ aufgabe1|clk       50.0 MHz      355.8 MHz     20.000        2.810         17.19
 Clock Relationships
 *******************
 
-Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
--------------------------------------------------------------------------------------------------------------------
-Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
--------------------------------------------------------------------------------------------------------------------
-aufgabe1|clk  aufgabe1|clk  |  20.000      17.190  |  No paths    -      |  No paths    -      |  No paths    -    
-===================================================================================================================
+Clocks                            |    rise  to  rise    |    fall  to  fall    |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack   |  constraint  slack   |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------
+aufgabe1|btn[1]  aufgabe1|btn[1]  |  No paths    -       |  20.000      18.791  |  No paths    -      |  No paths    -    
+aufgabe1|btn[2]  aufgabe1|btn[2]  |  No paths    -       |  20.000      18.791  |  No paths    -      |  No paths    -    
+aufgabe1|btn[3]  aufgabe1|btn[3]  |  No paths    -       |  20.000      18.791  |  No paths    -      |  No paths    -    
+aufgabe1|btn[4]  aufgabe1|btn[4]  |  No paths    -       |  20.000      18.791  |  No paths    -      |  No paths    -    
+aufgabe1|clk     aufgabe1|clk     |  20.000      17.190  |  No paths    -       |  No paths    -      |  No paths    -    
+==========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -175,6 +191,266 @@ Interface Information
 *********************
 
 No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: aufgabe1|btn[1]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                 Starting                                           Arrival           
+Instance         Reference           Type     Pin     Net           Time        Slack 
+                 Clock                                                                
+--------------------------------------------------------------------------------------
+u1.dp_out[0]     aufgabe1|btn[1]     SLE      Q       dp_out[0]     0.108       18.791
+======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                             Required           
+Instance         Reference           Type     Pin     Net             Time         Slack 
+                 Clock                                                                   
+-----------------------------------------------------------------------------------------
+u1.dp_out[0]     aufgabe1|btn[1]     SLE      D       dp_out_i[0]     19.745       18.791
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         19.745
+
+    - Propagation time:                      0.954
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 18.791
+
+    Number of logic level(s):                1
+    Starting point:                          u1.dp_out[0] / Q
+    Ending point:                            u1.dp_out[0] / D
+    The start point is clocked by            aufgabe1|btn[1] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+    The end   point is clocked by            aufgabe1|btn[1] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name                   Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+u1.dp_out[0]           SLE      Q        Out     0.108     0.108 f     -         
+dp_out[0]              Net      -        -       0.497     -           2         
+u1.dp_out_RNO_0[0]     CFG1     A        In      -         0.605 f     -         
+u1.dp_out_RNO_0[0]     CFG1     Y        Out     0.100     0.705 r     -         
+dp_out_i[0]            Net      -        -       0.248     -           1         
+u1.dp_out[0]           SLE      D        In      -         0.954 r     -         
+=================================================================================
+Total path delay (propagation time + setup) of 1.209 is 0.464(38.3%) logic and 0.745(61.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: aufgabe1|btn[2]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                 Starting                                           Arrival           
+Instance         Reference           Type     Pin     Net           Time        Slack 
+                 Clock                                                                
+--------------------------------------------------------------------------------------
+u1.dp_out[1]     aufgabe1|btn[2]     SLE      Q       dp_out[1]     0.108       18.791
+======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                             Required           
+Instance         Reference           Type     Pin     Net             Time         Slack 
+                 Clock                                                                   
+-----------------------------------------------------------------------------------------
+u1.dp_out[1]     aufgabe1|btn[2]     SLE      D       dp_out_i[1]     19.745       18.791
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         19.745
+
+    - Propagation time:                      0.954
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 18.791
+
+    Number of logic level(s):                1
+    Starting point:                          u1.dp_out[1] / Q
+    Ending point:                            u1.dp_out[1] / D
+    The start point is clocked by            aufgabe1|btn[2] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+    The end   point is clocked by            aufgabe1|btn[2] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name                   Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+u1.dp_out[1]           SLE      Q        Out     0.108     0.108 f     -         
+dp_out[1]              Net      -        -       0.497     -           2         
+u1.dp_out_RNO_0[1]     CFG1     A        In      -         0.605 f     -         
+u1.dp_out_RNO_0[1]     CFG1     Y        Out     0.100     0.705 r     -         
+dp_out_i[1]            Net      -        -       0.248     -           1         
+u1.dp_out[1]           SLE      D        In      -         0.954 r     -         
+=================================================================================
+Total path delay (propagation time + setup) of 1.209 is 0.464(38.3%) logic and 0.745(61.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: aufgabe1|btn[3]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                 Starting                                           Arrival           
+Instance         Reference           Type     Pin     Net           Time        Slack 
+                 Clock                                                                
+--------------------------------------------------------------------------------------
+u1.dp_out[2]     aufgabe1|btn[3]     SLE      Q       dp_out[2]     0.108       18.791
+======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                             Required           
+Instance         Reference           Type     Pin     Net             Time         Slack 
+                 Clock                                                                   
+-----------------------------------------------------------------------------------------
+u1.dp_out[2]     aufgabe1|btn[3]     SLE      D       dp_out_i[2]     19.745       18.791
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         19.745
+
+    - Propagation time:                      0.954
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 18.791
+
+    Number of logic level(s):                1
+    Starting point:                          u1.dp_out[2] / Q
+    Ending point:                            u1.dp_out[2] / D
+    The start point is clocked by            aufgabe1|btn[3] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+    The end   point is clocked by            aufgabe1|btn[3] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name                   Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+u1.dp_out[2]           SLE      Q        Out     0.108     0.108 f     -         
+dp_out[2]              Net      -        -       0.497     -           2         
+u1.dp_out_RNO_0[2]     CFG1     A        In      -         0.605 f     -         
+u1.dp_out_RNO_0[2]     CFG1     Y        Out     0.100     0.705 r     -         
+dp_out_i[2]            Net      -        -       0.248     -           1         
+u1.dp_out[2]           SLE      D        In      -         0.954 r     -         
+=================================================================================
+Total path delay (propagation time + setup) of 1.209 is 0.464(38.3%) logic and 0.745(61.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: aufgabe1|btn[4]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                 Starting                                           Arrival           
+Instance         Reference           Type     Pin     Net           Time        Slack 
+                 Clock                                                                
+--------------------------------------------------------------------------------------
+u1.dp_out[3]     aufgabe1|btn[4]     SLE      Q       dp_out[3]     0.108       18.791
+======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                             Required           
+Instance         Reference           Type     Pin     Net             Time         Slack 
+                 Clock                                                                   
+-----------------------------------------------------------------------------------------
+u1.dp_out[3]     aufgabe1|btn[4]     SLE      D       dp_out_i[3]     19.745       18.791
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         19.745
+
+    - Propagation time:                      0.954
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 18.791
+
+    Number of logic level(s):                1
+    Starting point:                          u1.dp_out[3] / Q
+    Ending point:                            u1.dp_out[3] / D
+    The start point is clocked by            aufgabe1|btn[4] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+    The end   point is clocked by            aufgabe1|btn[4] [falling] (rise=0.000 fall=10.000 period=20.000) on pin CLK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name                   Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+u1.dp_out[3]           SLE      Q        Out     0.108     0.108 f     -         
+dp_out[3]              Net      -        -       0.497     -           2         
+u1.dp_out_RNO_0[3]     CFG1     A        In      -         0.605 f     -         
+u1.dp_out_RNO_0[3]     CFG1     Y        Out     0.100     0.705 r     -         
+dp_out_i[3]            Net      -        -       0.248     -           1         
+u1.dp_out[3]           SLE      D        In      -         0.954 r     -         
+=================================================================================
+Total path delay (propagation time + setup) of 1.209 is 0.464(38.3%) logic and 0.745(61.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
 
 
 
@@ -270,10 +546,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 255MB peak: 255MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 255MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 255MB peak: 255MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 255MB)
 
 ---------------------------------------
 Resource Usage Report for aufgabe1 
@@ -281,29 +557,31 @@ Resource Usage Report for aufgabe1
 Mapping to part: m2s005vf400std
 Cell usage:
 CLKINT          2 uses
-CFG1           1 use
+CFG1           9 uses
 CFG2           6 uses
 CFG3           5 uses
 CFG4           11 uses
 
 Carry cells:
 ARI1            14 uses - used for arithmetic functions
+ARI1            2 uses - used for Wide-Mux implementation
+Total ARI1      16 uses
 
 
 Sequential Cells: 
-SLE            16 uses
+SLE            20 uses
 
 DSP Blocks:    0 of 11 (0%)
 
 I/O ports: 26
-I/O primitives: 22
-INBUF          10 uses
+I/O primitives: 26
+INBUF          14 uses
 OUTBUF         12 uses
 
 
 Global Clock Buffers: 2
 
-Total LUTs:    37
+Total LUTs:    47
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -311,14 +589,14 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  16 + 0 + 0 + 0 = 16;
-Total number of LUTs after P&R:  37 + 0 + 0 + 0 = 37;
+Total number of SLEs after P&R:  20 + 0 + 0 + 0 = 20;
+Total number of LUTs after P&R:  47 + 0 + 0 + 0 = 47;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 255MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 255MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Wed Nov 13 10:57:17 2024
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Tue Nov 26 11:42:34 2024
 
 ###########################################################]

@@ -1,0 +1,14 @@
+Software Version: 2024.2.0.13
+Opened 'C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\designer\aufgabe1\aufgabe1_fp\aufgabe1.pro'
+PDB file 'C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\designer\aufgabe1\aufgabe1.pdb' has been loaded successfully.
+DESIGN : aufgabe1;  CHECKSUM : 2F51;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+Info: Design version: 0
+File/Folder 'C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\designer\aufgabe1\aufgabe1.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\designer\aufgabe1\aufgabe1.ppd'; file programs Fabric.
+Fabric component bitstream digest: b4a8532c85e6ae206c0e2692fbe1ba7c5f4fa586b71c16f729cb47112aa0d146
+Entire bitstream digest: af847ad56e4a0ef2cbbfacf841e8193f52db1740869ff6d053ca8e3ba5f9e85c
+Finished: Tue Nov 26 11:43:03 2024 (Elapsed time 00:00:03)
+
+Project saved.
+Project closed.

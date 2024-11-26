@@ -15,6 +15,30 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
+<data>aufgabe1|btn[1]</data>
+<data>50.0 MHz</data>
+<data>827.1 MHz</data>
+<data>18.791</data>
+</row>
+<row>
+<data>aufgabe1|btn[2]</data>
+<data>50.0 MHz</data>
+<data>827.1 MHz</data>
+<data>18.791</data>
+</row>
+<row>
+<data>aufgabe1|btn[3]</data>
+<data>50.0 MHz</data>
+<data>827.1 MHz</data>
+<data>18.791</data>
+</row>
+<row>
+<data>aufgabe1|btn[4]</data>
+<data>50.0 MHz</data>
+<data>827.1 MHz</data>
+<data>18.791</data>
+</row>
+<row>
 <data>aufgabe1|clk</data>
 <data>50.0 MHz</data>
 <data>355.8 MHz</data>

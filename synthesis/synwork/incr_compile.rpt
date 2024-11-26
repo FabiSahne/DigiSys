@@ -13,15 +13,18 @@ Hostname: THESEUSJR-WIN
 Implementation : synthesis
 Synopsys HDL compiler and linker, Version comp202309synp1, Build 280R, Built Jun 20 2024 08:13:40, @
 
-Modified Files: 0
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
+11       C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd (2024-11-26 11:38:53, 2024-11-26 11:42:20)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 1
 MID:  lib.cell.view
+2        work.hex4x7seg.struktur may have changed because the following files changed:
+                        C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd (2024-11-26 11:38:53, 2024-11-26 11:42:20) <-- (architecture and entity definition)
 
 *******************************************************************
-Unmodified files: 12
+Unmodified files: 11
 FID:  path (timestamp)
 0        C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\lib\vhd2008\arith.vhd (2024-07-25 17:03:50)
 1        C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\lib\vhd2008\location.map (2024-07-25 17:03:50)
@@ -34,12 +37,9 @@ FID:  path (timestamp)
 8        C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2024-07-25 17:03:50)
 9        C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\lib\vhd\umr_capim.vhd (2024-07-25 17:03:50)
 10       C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd (2024-10-07 07:04:20)
-11       C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd (2024-11-12 15:05:52)
 
 *******************************************************************
-Unchanged modules: 4
+Unchanged modules: 2
 MID:  lib.cell.view
 0        work.aufgabe1.struktur
 1        work.aufgabe1.vhdl
-2        work.hex4x7seg.struktur
-3        work.hex4x7seg.vhdl

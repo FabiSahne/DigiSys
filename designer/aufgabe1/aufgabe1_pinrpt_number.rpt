@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Wed Nov 13 10:57:55 2024 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Tue Nov 26 11:42:50 2024 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v2024.2
 -Version: 2024.2.0.13
@@ -23,16 +23,16 @@ Number |Port    |Function                     |State      |I/O Std  |Direction |
 10               MSIO58PB6                     Unassigned  
 11               VSS                           Reserved    
 12               VDD                           Reserved    
-13      seg[7]   MSIO62NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-14      dp       MSIO62PB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-15      seg[5]   MSIO63NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-16      seg[6]   MSIO63PB6/GB2                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
+13      seg[7]   MSIO62NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+14      dp       MSIO62PB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+15      seg[5]   MSIO63NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+16      seg[6]   MSIO63PB6/GB2                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 17               VDDI6                         Reserved    
 18               VSS                           Reserved    
-19      seg[3]   MSIO64NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-20      seg[4]   MSIO64PB6/GB1                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-21      seg[1]   MSIO66NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-22      seg[2]   MSIO66PB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
+19      seg[3]   MSIO64NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+20      seg[4]   MSIO64PB6/GB1                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+21      seg[1]   MSIO66NB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+22      seg[2]   MSIO66PB6                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 23               MSIOD69PB5/CCC_NE1_CLKI2      Special     
 24      clk      MSIOD70PB5/CCC_NE1_CLKI1      Special     LVCMOS25  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
 25               VDDI5                         Reserved    
@@ -48,16 +48,16 @@ Number |Port    |Function                     |State      |I/O Std  |Direction |
 35               MSIOD80NB5                    Unassigned  
 36               MSIOD80PB5                    Unassigned  
 37               VPP                           Reserved    
-38               MSIO81PB4                     Unassigned  
-39      digi[4]  MSIO81NB4/CCC_NE1_CLKI0       Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-40               MSIO82NB4/PROBE_B             Unassigned  
-41               MSIO82PB4/PROBE_A             Unassigned  
-42      digi[3]  MSIO83NB4/GB7                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
-43      digi[2]  MSIO83PB4/GB3                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
+38      btn[4]   MSIO81PB4                     Fixed       LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+39      digi[4]  MSIO81NB4/CCC_NE1_CLKI0       Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+40      btn[3]   MSIO82NB4/PROBE_B             Fixed       LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+41      digi[3]  MSIO82PB4/PROBE_A             Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+42      btn[2]   MSIO83NB4/GB7                 Special     LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+43      digi[2]  MSIO83PB4/GB3                 Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 44               VSS                           Reserved    
 45               VDDI4                         Reserved    
-46               MSIO84PB4/CCC_NE0_CLKI0       Special     
-47      digi[1]  MSIO84NB4                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           8                  5                 
+46      btn[1]   MSIO84PB4/CCC_NE0_CLKI0       Special     LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+47      digi[1]  MSIO84NB4                     Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 48               VDD                           Reserved    
 49               VSS                           Reserved    
 50               MSIO92PB4                     Unassigned  

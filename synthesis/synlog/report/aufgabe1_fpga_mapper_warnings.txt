@@ -1,2 +1,10 @@
 @W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
+@W: MT420 |Found inferred clock aufgabe1|btn[1] with period 20.00ns. Please declare a user-defined clock on port btn[1].
+@W: MT420 |Found inferred clock aufgabe1|btn[2] with period 20.00ns. Please declare a user-defined clock on port btn[2].
+@W: MT420 |Found inferred clock aufgabe1|btn[3] with period 20.00ns. Please declare a user-defined clock on port btn[3].
+@W: MT420 |Found inferred clock aufgabe1|btn[4] with period 20.00ns. Please declare a user-defined clock on port btn[4].
 @W: MT420 |Found inferred clock aufgabe1|clk with period 20.00ns. Please declare a user-defined clock on port clk.

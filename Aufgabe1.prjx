@@ -52,21 +52,10 @@ ENDLIST
 LIST GlobalIncludeFileList
 ENDLIST
 LIST FileManager
-VALUE "<project>\constraint\io\user.pdc,io_pdc"
-STATE="utd"
-TIME="1731491559"
-SIZE="3323"
-IS_TARGET="TRUE"
-ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
 TIME="1731420423"
 SIZE="703"
-ENDFILE
-VALUE "<project>\simulation\testbench_postsynth_simulation.log,log"
-STATE="utd"
-TIME="1731420455"
-SIZE="2550"
 ENDFILE
 VALUE "<project>\synthesis\aufgabe1.so,so"
 STATE="utd"
@@ -93,6 +82,12 @@ STATE="utd"
 TIME="1731420332"
 SIZE="159"
 ENDFILE
+VALUE "C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.pdc,io_pdc"
+STATE="utd"
+TIME="1728277460"
+SIZE="4475"
+IS_READONLY="TRUE"
+ENDFILE
 VALUE "C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd,hdl"
 STATE="utd"
 TIME="1728277460"
@@ -100,8 +95,8 @@ SIZE="2060"
 ENDFILE
 VALUE "C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd,hdl"
 STATE="utd"
-TIME="1731420352"
-SIZE="3748"
+TIME="1732617740"
+SIZE="4526"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -110,7 +105,7 @@ LIST NewModulesInfo
 LIST "aufgabe1::work"
 FILE "C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd,hdl"
 LIST PNRConstraints
-VALUE "<project>\constraint\io\user.pdc,io_pdc"
+VALUE "C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.pdc,io_pdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
@@ -123,9 +118,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-LIST synthesis_implementations
-VALUE "synthesis"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -201,8 +193,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -251,8 +243,10 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+Reports;Reports;0
+ReportsCurrentItem;Run Programming Action:aufgabe1_PROGRAM.log
+Constraint Manager;Constraint Manager;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "aufgabe1::work","C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd","FALSE","FALSE"
@@ -264,7 +258,7 @@ ENDLIST
 LIST ActiveTestBenchList
 ENDLIST
 LIST IOTabList
-VALUE "constraint\io\user.pdc"
+VALUE "C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.pdc"
 ENDLIST
 LIST FPTabList
 ENDLIST

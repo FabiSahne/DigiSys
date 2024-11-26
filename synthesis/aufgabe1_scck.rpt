@@ -12,7 +12,7 @@ Hostname: THESEUSJR-WIN
 
 Implementation : synthesis
 
-# Written on Wed Nov 13 10:57:13 2024
+# Written on Tue Nov 26 11:42:30 2024
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\designer\aufgabe1\synthesis.fdc"
@@ -29,18 +29,34 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start            Requested     Requested     Clock        Clock          Clock
-Level     Clock            Frequency     Period        Type         Group          Load 
-----------------------------------------------------------------------------------------
-0 -       aufgabe1|clk     50.0 MHz      20.000        inferred     (multiple)     16   
-========================================================================================
+          Start               Requested     Requested     Clock        Clock          Clock
+Level     Clock               Frequency     Period        Type         Group          Load 
+-------------------------------------------------------------------------------------------
+0 -       aufgabe1|clk        50.0 MHz      20.000        inferred     (multiple)     16   
+                                                                                           
+0 -       aufgabe1|btn[1]     50.0 MHz      20.000        inferred     (multiple)     1    
+                                                                                           
+0 -       aufgabe1|btn[2]     50.0 MHz      20.000        inferred     (multiple)     1    
+                                                                                           
+0 -       aufgabe1|btn[3]     50.0 MHz      20.000        inferred     (multiple)     1    
+                                                                                           
+0 -       aufgabe1|btn[4]     50.0 MHz      20.000        inferred     (multiple)     1    
+===========================================================================================
 
 
 Clock Load Summary
 ******************
 
-                 Clock     Source        Clock Pin                  Non-clock Pin     Non-clock Pin
-Clock            Load      Pin           Seq Example                Seq Example       Comb Example 
----------------------------------------------------------------------------------------------------
-aufgabe1|clk     16        clk(port)     u1.mod4_counter[1:0].C     -                 -            
-===================================================================================================
+                    Clock     Source           Clock Pin                  Non-clock Pin     Non-clock Pin    
+Clock               Load      Pin              Seq Example                Seq Example       Comb Example     
+-------------------------------------------------------------------------------------------------------------
+aufgabe1|clk        16        clk(port)        u1.mod4_counter[1:0].C     -                 -                
+                                                                                                             
+aufgabe1|btn[1]     1         btn[1](port)     u1.dp_out[0].C             -                 dpin[0].I[0](inv)
+                                                                                                             
+aufgabe1|btn[2]     1         btn[2](port)     u1.dp_out[1].C             -                 dpin[1].I[0](inv)
+                                                                                                             
+aufgabe1|btn[3]     1         btn[3](port)     u1.dp_out[2].C             -                 dpin[2].I[0](inv)
+                                                                                                             
+aufgabe1|btn[4]     1         btn[4](port)     u1.dp_out[3].C             -                 dpin[3].I[0](inv)
+=============================================================================================================

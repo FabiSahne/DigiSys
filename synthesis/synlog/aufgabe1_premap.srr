@@ -1,4 +1,4 @@
-# Wed Nov 13 10:57:12 2024
+# Tue Nov 26 11:42:30 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -19,7 +19,7 @@ Synopsys Microchip Technology Pre-mapping, Version map202309actp1, Build 008R, B
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 200MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 200MB)
 
 Reading constraint file: C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\designer\aufgabe1\synthesis.fdc
 @L: C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\synthesis\aufgabe1_scck.rpt 
@@ -31,7 +31,7 @@ See clock summary report "C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 200MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 200MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 200MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 200MB)
@@ -39,8 +39,6 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 200MB)
 
-
-Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
 NConnInternalConnection caching is on
 
 Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 248MB)
@@ -54,6 +52,8 @@ Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00
 
 Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 248MB)
 
+
+Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
 @N: FX1184 |Applying syn_allowed_resources blockrams=10 on top level netlist aufgabe1 
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 249MB peak: 249MB)
@@ -63,42 +63,62 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 ******************
 
-          Start            Requested     Requested     Clock        Clock          Clock
-Level     Clock            Frequency     Period        Type         Group          Load 
-----------------------------------------------------------------------------------------
-0 -       aufgabe1|clk     50.0 MHz      20.000        inferred     (multiple)     16   
-========================================================================================
+          Start               Requested     Requested     Clock        Clock          Clock
+Level     Clock               Frequency     Period        Type         Group          Load 
+-------------------------------------------------------------------------------------------
+0 -       aufgabe1|clk        50.0 MHz      20.000        inferred     (multiple)     16   
+                                                                                           
+0 -       aufgabe1|btn[1]     50.0 MHz      20.000        inferred     (multiple)     1    
+                                                                                           
+0 -       aufgabe1|btn[2]     50.0 MHz      20.000        inferred     (multiple)     1    
+                                                                                           
+0 -       aufgabe1|btn[3]     50.0 MHz      20.000        inferred     (multiple)     1    
+                                                                                           
+0 -       aufgabe1|btn[4]     50.0 MHz      20.000        inferred     (multiple)     1    
+===========================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                 Clock     Source        Clock Pin                  Non-clock Pin     Non-clock Pin
-Clock            Load      Pin           Seq Example                Seq Example       Comb Example 
----------------------------------------------------------------------------------------------------
-aufgabe1|clk     16        clk(port)     u1.mod4_counter[1:0].C     -                 -            
-===================================================================================================
+                    Clock     Source           Clock Pin                  Non-clock Pin     Non-clock Pin    
+Clock               Load      Pin              Seq Example                Seq Example       Comb Example     
+-------------------------------------------------------------------------------------------------------------
+aufgabe1|clk        16        clk(port)        u1.mod4_counter[1:0].C     -                 -                
+                                                                                                             
+aufgabe1|btn[1]     1         btn[1](port)     u1.dp_out[0].C             -                 dpin[0].I[0](inv)
+                                                                                                             
+aufgabe1|btn[2]     1         btn[2](port)     u1.dp_out[1].C             -                 dpin[1].I[0](inv)
+                                                                                                             
+aufgabe1|btn[3]     1         btn[3](port)     u1.dp_out[2].C             -                 dpin[2].I[0](inv)
+                                                                                                             
+aufgabe1|btn[4]     1         btn[4](port)     u1.dp_out[3].C             -                 dpin[3].I[0](inv)
+=============================================================================================================
 
-@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":28:6:28:7|Found inferred clock aufgabe1|clk which controls 16 sequential elements including u1.counter[13:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":108:9:108:17|Found inferred clock aufgabe1|btn[1] which controls 1 sequential elements including u1.dp_out[0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":111:9:111:17|Found inferred clock aufgabe1|btn[2] which controls 1 sequential elements including u1.dp_out[1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":114:9:114:17|Found inferred clock aufgabe1|btn[3] which controls 1 sequential elements including u1.dp_out[2]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":117:9:117:17|Found inferred clock aufgabe1|btn[4] which controls 1 sequential elements including u1.dp_out[3]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":29:6:29:7|Found inferred clock aufgabe1|clk which controls 16 sequential elements including u1.counter[13:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\synthesis\aufgabe1.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 250MB peak: 250MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 250MB peak: 250MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 250MB peak: 250MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 250MB peak: 251MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 251MB peak: 251MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 250MB peak: 251MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 252MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 252MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Nov 13 10:57:14 2024
+# Tue Nov 26 11:42:31 2024
 
 ###########################################################]
