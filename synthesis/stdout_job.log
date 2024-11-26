@@ -1,0 +1,319 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "15:06:04    12-Nov-2024",
+	"Working Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+	"Install" : "C:/Microchip/Libero_SoC_v2024.2/SynplifyPro"
+},
+"synthesis" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "15:00:34",
+   "Runtime" : "05s",
+   "Executable Run Time" : "05s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "15:00:34",
+      "Runtime" : "05s",
+      "Executable Run Time" : "05s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:34",
+         "Runtime" : "02s",
+         "Executable Run Time" : "02s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "15:00:34",
+            "Runtime" : "01s",
+            "Executable Run Time" : "01s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "15:00:34",
+               "Run Time" : "01s",
+               "Exe Run Time" : "01s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "15:00:35",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "yes"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "15:00:35",
+            "Run Time" : "01s",
+            "Exe Run Time" : "01s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:36",
+         "Runtime" : "03s",
+         "Executable Run Time" : "03s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "15:00:36",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+},
+"synthesis" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "15:00:34",
+   "Runtime" : "02m:05s",
+   "Executable Run Time" : "05s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "15:00:34",
+      "Runtime" : "02m:05s",
+      "Executable Run Time" : "05s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:34",
+         "Runtime" : "02m:02s",
+         "Executable Run Time" : "02s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "15:00:34",
+            "Runtime" : "02m:01s",
+            "Executable Run Time" : "01s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "15:02:33",
+               "Run Time" : "02s",
+               "Exe Run Time" : "01s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "15:02:35",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "15:02:35",
+            "Run Time" : "01s",
+            "Exe Run Time" : "01s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:36",
+         "Runtime" : "02m:03s",
+         "Executable Run Time" : "03s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "15:02:36",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+},
+"synthesis" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "15:00:34",
+   "Runtime" : "04m:58s",
+   "Executable Run Time" : "04s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "15:00:34",
+      "Runtime" : "04m:58s",
+      "Executable Run Time" : "04s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:34",
+         "Runtime" : "04m:58s",
+         "Executable Run Time" : "01s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "15:00:34",
+            "Runtime" : "04m:58s",
+            "Executable Run Time" : "00s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "2",
+               "Has Errors" : "yes",
+               "Run Start Time" : "15:05:31",
+               "Run Time" : "01s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Canceled",
+               "Return Code" : "-",
+               "Has Errors" : "yes",
+               "Run Start Time" : "15:02:35",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Canceled",
+            "Return Code" : "-",
+            "Has Errors" : "yes",
+            "Run Start Time" : "15:02:35",
+            "Run Time" : "01s",
+            "Exe Run Time" : "01s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:36",
+         "Runtime" : "00s",
+         "Executable Run Time" : "03s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Canceled",
+            "Return Code" : "-",
+            "Has Errors" : "yes",
+            "Run Start Time" : "15:02:36",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+},
+"synthesis" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "15:00:34",
+   "Runtime" : "05m:30s",
+   "Executable Run Time" : "04s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "15:00:34",
+      "Runtime" : "05m:30s",
+      "Executable Run Time" : "04s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:34",
+         "Runtime" : "05m:27s",
+         "Executable Run Time" : "02s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "15:00:34",
+            "Runtime" : "05m:26s",
+            "Executable Run Time" : "01s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "15:05:58",
+               "Run Time" : "02s",
+               "Exe Run Time" : "01s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "15:06:00",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "15:06:00",
+            "Run Time" : "01s",
+            "Exe Run Time" : "01s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "15:00:36",
+         "Runtime" : "05m:28s",
+         "Executable Run Time" : "02s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Fabian/HTWG/DigiSys/Libero_Projects/Aufgabe1/Aufgabe1/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "15:06:02",
+            "Run Time" : "02s",
+            "Exe Run Time" : "02s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

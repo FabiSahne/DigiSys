@@ -1,0 +1,25 @@
+Warning: CMPG4-007: Top level port btn[4] is not connected to any IO pad
+Warning: CMPG4-007: Top level port btn[3] is not connected to any IO pad
+Warning: CMPG4-007: Top level port btn[2] is not connected to any IO pad
+Warning: CMPG4-007: Top level port btn[1] is not connected to any IO pad
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       2 
+      Globals that cannot be demoted:      0 
+      Globals considered for demotion:     2 
+
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    16     0      0      'clk_ibuf_RNIVTI21' 
+    0      16     0      'rst_ibuf_RNIUUM54' 
+
+Info: Demotion information: 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

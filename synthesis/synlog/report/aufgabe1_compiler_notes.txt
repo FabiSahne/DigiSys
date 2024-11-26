@@ -1,0 +1,20 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CL324 :	| Built-in conditional analysis identifier 'vhdl_version' has value "2019"
+@N: CL324 :	| Built-in conditional analysis identifier 'tool_type' has value "SYNTHESIS"
+@N: CL324 :	| Built-in conditional analysis identifier 'tool_vendor' has value "SYNOPSYS"
+@N: CL324 :	| Built-in conditional analysis identifier 'tool_name' has value "FPGA_COMPILER"
+@N: CL324 :	| Built-in conditional analysis identifier 'tool_edition' has value "SYNPLIFY"
+@N: CL324 :	| Built-in conditional analysis identifier 'tool_version' has value "V-2023.09M-3"
+@N:"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd":5:7:5:14|Top entity is set to aufgabe1.
+@N: CD140 :	| Using the VHDL 2019 Standard for file 'C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd'.
+@N: CD140 :	| Using the VHDL 2019 Standard for file 'C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd'.
+@N: CD231 :"C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd":5:7:5:14|Synthesizing work.aufgabe1.struktur.
+@N: CD630 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":6:7:6:15|Synthesizing work.hex4x7seg.struktur.
+@N: CD604 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":63:9:63:22|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":75:9:75:22|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":99:9:99:22|OTHERS clause is not synthesized.
+@N: CL159 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":11:8:11:11|Input dpin is unused.
+@N|Running in 64-bit mode
+

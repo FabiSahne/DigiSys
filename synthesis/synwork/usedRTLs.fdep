@@ -1,0 +1,6 @@
+#List of actual used RTLs.
+
+File                                                          Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\aufgabe1.vhd"         vhdl                      IN PROJECT
+"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd"        vhdl                      IN PROJECT

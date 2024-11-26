@@ -1,0 +1,1 @@
+@W: MT530 :"c:\users\fabian\htwg\digisys\aufgabe 1\hex4x7seg.vhd":28:6:28:7|Found inferred clock aufgabe1|clk which controls 16 sequential elements including u1.counter[13:0]. This clock has no specified timing constraint which may adversely impact design performance. 

@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version V-2023.09M-3
+#--  Project file C:\Users\Fabian\HTWG\DigiSys\Libero_Projects\Aufgabe1\Aufgabe1\synthesis\aufgabe1_syn.prd
+#--  Written on Tue Nov 12 15:06:42 2024
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

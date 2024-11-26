@@ -1,0 +1,3 @@
+@E: CD255 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":46:29:46:29|No identifier "mod_4_counter" in scope
+@E: Parse errors encountered - exiting
+

@@ -1,0 +1,2 @@
+@W: CL117 :"C:\Users\Fabian\HTWG\DigiSys\Aufgabe 1\hex4x7seg.vhd":42:6:42:7|Latch generated from process for signal mod4_counter(1 downto 0); possible missing assignment in an if or case statement.
+

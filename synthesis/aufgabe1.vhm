@@ -1,0 +1,744 @@
+--
+-- Written by Synopsys
+-- Product Version "V-2023.09M-3"
+-- Program "Synplify Pro", Mapper "map202309actp1, Build 008R"
+-- Wed Nov 13 10:57:16 2024
+--
+
+--
+-- Written by Synplify Pro version Build 008R
+-- Wed Nov 13 10:57:16 2024
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity hex4x7seg is
+port(
+  seg_c : out std_logic_vector(6 downto 4);
+  sw_c : in std_logic_vector(8 downto 1);
+  digi_c : out std_logic_vector(4 downto 1);
+  N_27_i :  out std_logic;
+  N_15_i :  out std_logic;
+  N_11_i :  out std_logic;
+  N_6_i :  out std_logic;
+  clk_c :  in std_logic;
+  rst_c :  in std_logic);
+end hex4x7seg;
+
+architecture beh of hex4x7seg is
+  signal COUNTER : std_logic_vector(13 downto 0);
+  signal COUNTER_S : std_logic_vector(13 downto 0);
+  signal MOD4_COUNTER : std_logic_vector(1 downto 0);
+  signal MOD4_COUNTER_4 : std_logic_vector(1 downto 0);
+  signal COUNTER_CRY : std_logic_vector(12 downto 1);
+  signal COUNTER_CRY_Y : std_logic_vector(12 downto 1);
+  signal COUNTER_S_FCO : std_logic_vector(13 to 13);
+  signal COUNTER_S_Y : std_logic_vector(13 to 13);
+  signal MUX_OUT : std_logic_vector(3 downto 0);
+  signal NN_1 : std_logic ;
+  signal NN_2 : std_logic ;
+  signal COUNTER_S_93_FCO : std_logic ;
+  signal COUNTER_S_93_S : std_logic ;
+  signal COUNTER_S_93_Y : std_logic ;
+  signal UN17_COUNTER_6 : std_logic ;
+  signal UN17_COUNTER_9 : std_logic ;
+  signal UN17_COUNTER_8 : std_logic ;
+  signal UN17_COUNTER_7 : std_logic ;
+  signal UN17_COUNTER : std_logic ;
+begin
+\COUNTER_RNO[0]\: CFG1 
+generic map(
+  INIT => X"1"
+)
+port map (
+  A => COUNTER(0),
+  Y => COUNTER_S(0));
+\COUNTER[13]_Z106\: SLE port map (
+    Q => COUNTER(13),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(13),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[12]_Z107\: SLE port map (
+    Q => COUNTER(12),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(12),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[11]_Z108\: SLE port map (
+    Q => COUNTER(11),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(11),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[10]_Z109\: SLE port map (
+    Q => COUNTER(10),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(10),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[9]_Z110\: SLE port map (
+    Q => COUNTER(9),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(9),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[8]_Z111\: SLE port map (
+    Q => COUNTER(8),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(8),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[7]_Z112\: SLE port map (
+    Q => COUNTER(7),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(7),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[6]_Z113\: SLE port map (
+    Q => COUNTER(6),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(6),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[5]_Z114\: SLE port map (
+    Q => COUNTER(5),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(5),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[4]_Z115\: SLE port map (
+    Q => COUNTER(4),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(4),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[3]_Z116\: SLE port map (
+    Q => COUNTER(3),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(3),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[2]_Z117\: SLE port map (
+    Q => COUNTER(2),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(2),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[1]_Z118\: SLE port map (
+    Q => COUNTER(1),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(1),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\COUNTER[0]_Z119\: SLE port map (
+    Q => COUNTER(0),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => COUNTER_S(0),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\MOD4_COUNTER[1]_Z120\: SLE port map (
+    Q => MOD4_COUNTER(1),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => MOD4_COUNTER_4(1),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\MOD4_COUNTER[0]_Z121\: SLE port map (
+    Q => MOD4_COUNTER(0),
+    ADn => NN_1,
+    ALn => rst_c,
+    CLK => clk_c,
+    D => MOD4_COUNTER_4(0),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+COUNTER_S_93: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_S_93_FCO,
+  S => COUNTER_S_93_S,
+  Y => COUNTER_S_93_Y,
+  B => COUNTER(0),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => NN_1);
+\COUNTER_CRY[1]_Z123\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(1),
+  S => COUNTER_S(1),
+  Y => COUNTER_CRY_Y(1),
+  B => COUNTER(1),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_S_93_FCO);
+\COUNTER_CRY[2]_Z124\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(2),
+  S => COUNTER_S(2),
+  Y => COUNTER_CRY_Y(2),
+  B => COUNTER(2),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(1));
+\COUNTER_CRY[3]_Z125\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(3),
+  S => COUNTER_S(3),
+  Y => COUNTER_CRY_Y(3),
+  B => COUNTER(3),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(2));
+\COUNTER_CRY[4]_Z126\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(4),
+  S => COUNTER_S(4),
+  Y => COUNTER_CRY_Y(4),
+  B => COUNTER(4),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(3));
+\COUNTER_CRY[5]_Z127\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(5),
+  S => COUNTER_S(5),
+  Y => COUNTER_CRY_Y(5),
+  B => COUNTER(5),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(4));
+\COUNTER_CRY[6]_Z128\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(6),
+  S => COUNTER_S(6),
+  Y => COUNTER_CRY_Y(6),
+  B => COUNTER(6),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(5));
+\COUNTER_CRY[7]_Z129\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(7),
+  S => COUNTER_S(7),
+  Y => COUNTER_CRY_Y(7),
+  B => COUNTER(7),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(6));
+\COUNTER_CRY[8]_Z130\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(8),
+  S => COUNTER_S(8),
+  Y => COUNTER_CRY_Y(8),
+  B => COUNTER(8),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(7));
+\COUNTER_CRY[9]_Z131\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(9),
+  S => COUNTER_S(9),
+  Y => COUNTER_CRY_Y(9),
+  B => COUNTER(9),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(8));
+\COUNTER_CRY[10]_Z132\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(10),
+  S => COUNTER_S(10),
+  Y => COUNTER_CRY_Y(10),
+  B => COUNTER(10),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(9));
+\COUNTER_CRY[11]_Z133\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(11),
+  S => COUNTER_S(11),
+  Y => COUNTER_CRY_Y(11),
+  B => COUNTER(11),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(10));
+\COUNTER_S[13]_Z134\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_S_FCO(13),
+  S => COUNTER_S(13),
+  Y => COUNTER_S_Y(13),
+  B => COUNTER(13),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(12));
+\COUNTER_CRY[12]_Z135\: ARI1 
+generic map(
+  INIT => X"4AA00"
+)
+port map (
+  FCO => COUNTER_CRY(12),
+  S => COUNTER_S(12),
+  Y => COUNTER_CRY_Y(12),
+  B => COUNTER(12),
+  C => NN_2,
+  D => NN_2,
+  A => NN_1,
+  FCI => COUNTER_CRY(11));
+UN17_COUNTER_6_Z136: CFG2 
+generic map(
+  INIT => X"1"
+)
+port map (
+  A => COUNTER(10),
+  B => COUNTER(11),
+  Y => UN17_COUNTER_6);
+PHASE8: CFG2 
+generic map(
+  INIT => X"4"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => MOD4_COUNTER(1),
+  Y => digi_c(3));
+PHASE7: CFG2 
+generic map(
+  INIT => X"2"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => MOD4_COUNTER(1),
+  Y => digi_c(2));
+PHASE6: CFG2 
+generic map(
+  INIT => X"1"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => MOD4_COUNTER(1),
+  Y => digi_c(1));
+UN19_COUNTER: CFG2 
+generic map(
+  INIT => X"8"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => MOD4_COUNTER(1),
+  Y => digi_c(4));
+\MUX_OUT_3[3]\: CFG3 
+generic map(
+  INIT => X"27"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => sw_c(8),
+  C => sw_c(4),
+  Y => MUX_OUT(3));
+\MUX_OUT_3[2]\: CFG3 
+generic map(
+  INIT => X"27"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => sw_c(7),
+  C => sw_c(3),
+  Y => MUX_OUT(2));
+\MUX_OUT_3[1]\: CFG3 
+generic map(
+  INIT => X"27"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => sw_c(6),
+  C => sw_c(2),
+  Y => MUX_OUT(1));
+\MUX_OUT_3[0]\: CFG3 
+generic map(
+  INIT => X"27"
+)
+port map (
+  A => MOD4_COUNTER(0),
+  B => sw_c(5),
+  C => sw_c(1),
+  Y => MUX_OUT(0));
+UN17_COUNTER_9_Z145: CFG4 
+generic map(
+  INIT => X"0001"
+)
+port map (
+  A => COUNTER(13),
+  B => COUNTER(12),
+  C => COUNTER(9),
+  D => COUNTER(8),
+  Y => UN17_COUNTER_9);
+UN17_COUNTER_8_Z146: CFG4 
+generic map(
+  INIT => X"0001"
+)
+port map (
+  A => COUNTER(7),
+  B => COUNTER(6),
+  C => COUNTER(5),
+  D => COUNTER(4),
+  Y => UN17_COUNTER_8);
+UN17_COUNTER_7_Z147: CFG4 
+generic map(
+  INIT => X"0001"
+)
+port map (
+  A => COUNTER(3),
+  B => COUNTER(2),
+  C => COUNTER(1),
+  D => COUNTER(0),
+  Y => UN17_COUNTER_7);
+UN17_COUNTER_Z148: CFG4 
+generic map(
+  INIT => X"8000"
+)
+port map (
+  A => UN17_COUNTER_8,
+  B => UN17_COUNTER_7,
+  C => UN17_COUNTER_6,
+  D => UN17_COUNTER_9,
+  Y => UN17_COUNTER);
+\MOD4_COUNTER_RNO[0]\: CFG2 
+generic map(
+  INIT => X"6"
+)
+port map (
+  A => UN17_COUNTER,
+  B => MOD4_COUNTER(0),
+  Y => MOD4_COUNTER_4(0));
+\MOD4_COUNTER_RNO[1]\: CFG3 
+generic map(
+  INIT => X"6A"
+)
+port map (
+  A => MOD4_COUNTER(1),
+  B => MOD4_COUNTER(0),
+  C => UN17_COUNTER,
+  Y => MOD4_COUNTER_4(1));
+\SEG_OUT_7_1_.M17\: CFG4 
+generic map(
+  INIT => X"3EDB"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => seg_c(4));
+\SEG_OUT_7_1_.M20\: CFG4 
+generic map(
+  INIT => X"7F67"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => seg_c(5));
+\SEG_OUT_7_1_.M23\: CFG4 
+generic map(
+  INIT => X"5B37"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => seg_c(6));
+\SEG_OUT_7_1_.N_6_I\: CFG4 
+generic map(
+  INIT => X"BEF6"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => N_6_i);
+\SEG_OUT_7_1_.N_11_I\: CFG4 
+generic map(
+  INIT => X"A6EF"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => N_11_i);
+\SEG_OUT_7_1_.N_15_I\: CFG4 
+generic map(
+  INIT => X"A8FB"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => N_15_i);
+\SEG_OUT_7_1_.N_27_I\: CFG4 
+generic map(
+  INIT => X"D6FB"
+)
+port map (
+  A => MUX_OUT(3),
+  B => MUX_OUT(2),
+  C => MUX_OUT(1),
+  D => MUX_OUT(0),
+  Y => N_27_i);
+II_GND: GND port map (
+    Y => NN_2);
+II_VCC: VCC port map (
+    Y => NN_1);
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity aufgabe1 is
+port(
+rst :  in std_logic;
+clk :  in std_logic;
+btn : in std_logic_vector(4 downto 1);
+sw : in std_logic_vector(8 downto 1);
+digi : out std_logic_vector(4 downto 1);
+seg : out std_logic_vector(7 downto 1);
+dp :  out std_logic);
+end aufgabe1;
+
+architecture beh of aufgabe1 is
+signal SW_C : std_logic_vector(8 downto 1);
+signal DIGI_C : std_logic_vector(4 downto 1);
+signal SEG_C : std_logic_vector(6 downto 4);
+signal NN_1 : std_logic ;
+signal NN_2 : std_logic ;
+signal RST_C : std_logic ;
+signal CLK_C : std_logic ;
+signal \U1.SEG_OUT_7_1_.N_27_I\ : std_logic ;
+signal \U1.SEG_OUT_7_1_.N_15_I\ : std_logic ;
+signal \U1.SEG_OUT_7_1_.N_11_I\ : std_logic ;
+signal \U1.SEG_OUT_7_1_.N_6_I\ : std_logic ;
+signal CLK_IBUF : std_logic ;
+signal RST_IBUF : std_logic ;
+component hex4x7seg
+  port(
+    seg_c : out std_logic_vector(6 downto 4);
+    sw_c : in std_logic_vector(8 downto 1);
+    digi_c : out std_logic_vector(4 downto 1);
+    N_27_i :  out std_logic;
+    N_15_i :  out std_logic;
+    N_11_i :  out std_logic;
+    N_6_i :  out std_logic;
+    clk_c :  in std_logic;
+    rst_c :  in std_logic  );
+end component;
+begin
+RST_IBUF_RNIUUM54: CLKINT port map (
+  Y => RST_C,
+  A => RST_IBUF);
+CLK_IBUF_RNIVTI21: CLKINT port map (
+  Y => CLK_C,
+  A => CLK_IBUF);
+RST_IBUF_Z60: INBUF port map (
+Y => RST_IBUF,
+PAD => rst);
+CLK_IBUF_Z61: INBUF port map (
+Y => CLK_IBUF,
+PAD => clk);
+\SW_IBUF[1]\: INBUF port map (
+Y => SW_C(1),
+PAD => sw(1));
+\SW_IBUF[2]\: INBUF port map (
+Y => SW_C(2),
+PAD => sw(2));
+\SW_IBUF[3]\: INBUF port map (
+Y => SW_C(3),
+PAD => sw(3));
+\SW_IBUF[4]\: INBUF port map (
+Y => SW_C(4),
+PAD => sw(4));
+\SW_IBUF[5]\: INBUF port map (
+Y => SW_C(5),
+PAD => sw(5));
+\SW_IBUF[6]\: INBUF port map (
+Y => SW_C(6),
+PAD => sw(6));
+\SW_IBUF[7]\: INBUF port map (
+Y => SW_C(7),
+PAD => sw(7));
+\SW_IBUF[8]\: INBUF port map (
+Y => SW_C(8),
+PAD => sw(8));
+\DIGI_OBUF[1]\: OUTBUF port map (
+PAD => digi(1),
+D => DIGI_C(1));
+\DIGI_OBUF[2]\: OUTBUF port map (
+PAD => digi(2),
+D => DIGI_C(2));
+\DIGI_OBUF[3]\: OUTBUF port map (
+PAD => digi(3),
+D => DIGI_C(3));
+\DIGI_OBUF[4]\: OUTBUF port map (
+PAD => digi(4),
+D => DIGI_C(4));
+\SEG_OBUF[1]\: OUTBUF port map (
+PAD => seg(1),
+D => \U1.SEG_OUT_7_1_.N_6_I\);
+\SEG_OBUF[2]\: OUTBUF port map (
+PAD => seg(2),
+D => \U1.SEG_OUT_7_1_.N_11_I\);
+\SEG_OBUF[3]\: OUTBUF port map (
+PAD => seg(3),
+D => \U1.SEG_OUT_7_1_.N_15_I\);
+\SEG_OBUF[4]\: OUTBUF port map (
+PAD => seg(4),
+D => SEG_C(4));
+\SEG_OBUF[5]\: OUTBUF port map (
+PAD => seg(5),
+D => SEG_C(5));
+\SEG_OBUF[6]\: OUTBUF port map (
+PAD => seg(6),
+D => SEG_C(6));
+\SEG_OBUF[7]\: OUTBUF port map (
+PAD => seg(7),
+D => \U1.SEG_OUT_7_1_.N_27_I\);
+DP_OBUF: OUTBUF port map (
+PAD => dp,
+D => NN_1);
+U1: hex4x7seg port map (
+  seg_c(6 downto 4) => SEG_C(6 downto 4),
+  sw_c(8 downto 1) => SW_C(8 downto 1),
+  digi_c(4 downto 1) => DIGI_C(4 downto 1),
+  N_27_i => \U1.SEG_OUT_7_1_.N_27_I\,
+  N_15_i => \U1.SEG_OUT_7_1_.N_15_I\,
+  N_11_i => \U1.SEG_OUT_7_1_.N_11_I\,
+  N_6_i => \U1.SEG_OUT_7_1_.N_6_I\,
+  clk_c => CLK_C,
+  rst_c => RST_C);
+II_GND: GND port map (
+  Y => NN_1);
+II_VCC: VCC port map (
+  Y => NN_2);
+end beh;
+
